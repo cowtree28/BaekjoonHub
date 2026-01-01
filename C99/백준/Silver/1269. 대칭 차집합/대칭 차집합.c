@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_BUCKET_SIZE 200000
+#define MAX_BUCKET_SIZE 100000
 typedef struct {
 	int key;
 	int value;
