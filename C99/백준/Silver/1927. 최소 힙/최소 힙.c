@@ -16,13 +16,9 @@ void* xalloc(int size) {
 
 Heap* heap_init(int size) {
 	Heap* h = (Heap*)xalloc(sizeof(Heap));
-	h->arr = (int*)xalloc(sizeof(int) * size);
+	h->arr = (int*)xalloc(sizeof(int) * (size + 1));
 	h->size = 0;
 	return h;
-}
-
-int min_node(int a, int b) {
-	return a < b ? a : b;
 }
 
 void heap_insert(Heap* h, int value) {
